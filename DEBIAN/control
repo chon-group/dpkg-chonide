@@ -1,0 +1,14 @@
+Package: chonide
+Version: 1.0.2
+Priority:
+Architecture: all
+Essential:
+Depends: firefox | firefox-esr, openssh-server, openssh-sftp-server
+Pre-depends: chonos-sysconfig (>= 1.0.0), chonos-embeddedmas (>= 1.0.1), chonos-firmwaremng (>= 1.0.0)
+Suggests:
+Installed-Size:
+Maintainer: chon@grupo.cefet-rj.br
+Conflicts: chonos
+Replaces:
+Provides:
+Description: Cognitive Hardware on Network - IDE

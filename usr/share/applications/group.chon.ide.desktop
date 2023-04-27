@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Exec=/usr/bin/firefox https://local.bot.chon.group:3270
+Name=ChonIDE
+Comment=ChonIDE
+Icon=/usr/share/icons/group.chon/ide.png

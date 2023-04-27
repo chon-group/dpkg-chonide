@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#Configurando Hostname
+cat /etc/hosts | grep -v "chon.group" | grep -v "168.168.1" > /tmp/hosts.old
+cat /tmp/hosts.old > /etc/hosts
+echo "127.168.168.1 local.bot.chon.group" >> /etc/hosts
+
+echo "local:none:none" > /opt/chonos-embMAS/conf/ddns.conf
+
+#Desabilitando log automático do terminal
+cat /etc/rc.local | grep -v "/usr/bin/chonos-log -l term &" > /tmp/rc.local
+cat /tmp/rc.local > /etc/rc.local
