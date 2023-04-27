@@ -10,3 +10,7 @@ echo "local:none:none" > /opt/chonos-embMAS/conf/ddns.conf
 #Desabilitando log automático do terminal
 cat /etc/rc.local | grep -v "/usr/bin/chonos-log -l term &" > /tmp/rc.local
 cat /tmp/rc.local > /etc/rc.local
+
+# Desabilitando scan de disco obrigatório do chonOS
+particao=`mount | grep " \/ " | cut -d " " -f 1`
+/usr/sbin/tune2fs -c -1 $particao
