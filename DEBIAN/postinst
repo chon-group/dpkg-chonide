@@ -14,3 +14,14 @@ cat /tmp/rc.local > /etc/rc.local
 # Desabilitando scan de disco obrigatório do chonOS
 particao=`mount | grep " \/ " | cut -d " " -f 1`
 /usr/sbin/tune2fs -c -1 $particao
+
+
+systemctl daemon-reload
+systemctl enable chonos-log.service
+systemctl start  chonos-log.service
+systemctl enable chonos-sysconfig.service
+systemctl start chonos-sysconfig.service
+systemctl enable chonos-network.service
+systemctl start chonos-network.service
+systemctl enable chonos-neighbors.service
+systemctl start chonos-neighbors.service
