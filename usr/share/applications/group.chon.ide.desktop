@@ -5,5 +5,6 @@ Terminal=false
 Type=Application
 Exec=/usr/bin/firefox https://local.bot.chon.group:3270
 Name=ChonIDE
-Comment=ChonIDE
+Comment=An IDE to Support the Development of Embedded Multi-Agent Systems
 Icon=/usr/share/icons/group.chon/ide.png
+Categories=Development;

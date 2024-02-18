@@ -1,5 +1,5 @@
 Package: chonide
-Version: 1.2.1
+Version: 1.2.2
 Priority:
 Architecture: all
 Essential:
@@ -11,4 +11,4 @@ Maintainer: chon@grupo.cefet-rj.br
 Conflicts: chonos
 Replaces:
 Provides:
-Description: Cognitive Hardware on Network - IDE
+Description: ChonIDE - An IDE to Support the Development of Embedded Multi-Agent Systems
