@@ -1,23 +1,20 @@
-# ChonIDE .deb package
-Meta package for Debian, Ubuntu, Mint, and derivatives that provides the [ChonIDE - An IDE to Support the Development of Embedded Multi-Agent Systems](https://github.com/chon-group/chonIDE) 
+# ChonIDE APT package
+
+||
+|:--:|
+|Meta package for Debian, Ubuntu, Mint, and derivatives that provides the [ChonIDE - An IDE to Support the Development of Embedded Multi-Agent Systems](https://github.com/chon-group/chonIDE)|
+
 
 ## How to install?
 
 In a terminal, execute the steps described below:
 
-```sh
- echo "deb [arch=all trusted=yes] http://packages.chon.group/ chonos main" | sudo tee /etc/apt/sources.list.d/chonos.list 
- sudo apt update 
- sudo apt install chonide 
+```console
+echo "deb [trusted=yes] http://packages.chon.group/ chonos main" | sudo tee /etc/apt/sources.list.d/chonos.list
+sudo apt update
+sudo apt install chonide
 ```
 
- ## Others links
-
-* [ChonIDE repository](https://github.com/chon-group/chonIDE)
-
-* [Instalation tutorial](https://github.com/chon-group/chonIDE/blob/main/doc/01-installation/debian-and-Ubuntu.md)
-
-* [Hello world](https://github.com/chon-group/chonIDE/blob/main/doc/02-helloWorld/Ubuntu.md)
 
 ## COPYRIGHT
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />ChonIDE is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The licensor cannot revoke these freedoms as long as you follow the license terms:
