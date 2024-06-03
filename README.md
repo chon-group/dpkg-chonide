@@ -1,6 +1,6 @@
 # ChonIDE APT package
 
-||
+|![chonide](https://github.com/chon-group/dpkg-chonide/assets/32855001/5c72e3b8-c3ff-4b7e-a7a4-37fad64205b4)|
 |:--:|
 |Meta package for Debian, Ubuntu, Mint, and derivatives that provides the [ChonIDE - An IDE to Support the Development of Embedded Multi-Agent Systems](https://github.com/chon-group/chonIDE)|
 
