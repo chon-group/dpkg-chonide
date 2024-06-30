@@ -8,7 +8,7 @@ Pre-depends: chonos-sysconfig (>= 1.4.4), chonos-embeddedmas (>= 1.2.1), chonos-
 Suggests:
 Installed-Size:
 Maintainer: chon@grupo.cefet-rj.br
-Conflicts: chonos
+Conflicts: chonos, choncloud
 Replaces:
 Provides:
 Description: Meta package that provide the ChonIDE - An IDE to Support the Development of Embedded Multi-Agent Systems.
