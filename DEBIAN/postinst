@@ -1,25 +1,14 @@
 #!/bin/bash
 
-#Configurando Hostname
-cat /etc/hosts | grep -v "chon.group" | grep -v "168.168.1" > /tmp/hosts.old
-cat /tmp/hosts.old > /etc/hosts
-echo "127.168.168.1 local.bot.chon.group" >> /etc/hosts
-
-echo "local:none:none" > /opt/chonos-embMAS/conf/ddns.conf
-
-#Desabilitando log automático do terminal
-cat /etc/rc.local | grep -v "/usr/bin/chonos-log -l term &" > /tmp/rc.local
-cat /tmp/rc.local > /etc/rc.local
-
-# Desabilitando scan de disco obrigatório do chonOS
-particao=`mount | grep " \/ " | cut -d " " -f 1`
-/usr/sbin/tune2fs -c -1 $particao
-
+#Configuring the chonosDDNS to local.bot.chon.group
+/usr/bin/chonosDDNSManager --conf -d local -u none -t none
 
 systemctl daemon-reload
 systemctl enable chonos-log.service
 systemctl start  chonos-log.service
 systemctl enable chonos-sysconfig.service
-systemctl start chonos-sysconfig.service
+systemctl start  chonos-sysconfig.service
+systemctl enable chonos-task.service
+systemctl start  chonos-task.service
 systemctl enable chonos-neighbors.service
 systemctl start chonos-neighbors.service
