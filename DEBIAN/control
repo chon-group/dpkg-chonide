@@ -1,5 +1,5 @@
 Package: chonide
-Version: 2.0.2
+Version: 2.0.3
 Priority:
 Architecture: all
 Essential:
@@ -11,5 +11,5 @@ Maintainer: Nilson Lazarin <chon@grupo.cefet-rj.br>
 Conflicts: chonos, choncloud, chonos-wsl-installer
 Replaces:
 Provides:
-Homepage: 
+Homepage: http://ide.chon.group/
 Description: Meta package that provide the ChonIDE - An IDE to Support the Development of Embedded Multi-Agent Systems.
